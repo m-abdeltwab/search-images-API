@@ -12,17 +12,16 @@ class SearchBar extends React.Component {
     return (
       <div className="search-bar">
         <form onSubmit={this.onFormSubmit}>
-          <div className="ui segment fluid action input">
+          <div className="ui segment fluid icon input">
             <input
               value={this.state.term}
               className="inputField"
               type="text"
-              placeholder="Image Search"
+              placeholder="Image Search..."
               onChange={(e) => {
                 this.setState({ term: e.target.value });
               }}
             />
-            <button className="ui button">Search</button>
           </div>
         </form>
       </div>
